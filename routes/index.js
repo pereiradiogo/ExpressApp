@@ -12,8 +12,6 @@ router.get('/', function(req, res, next) {
   res.render('index', json);
 });
 
-
-
 request('http://localhost:3000/random.json', function (error, response, body) {
   console.log('error:', error); // Print the error if one occurred 
   console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
