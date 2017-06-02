@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p #{__i('welcome')} #{title}
+
+  ul
+    for book in books
+      li #{book.name} at #{book.price}
+    else
+      li #{__i('no_books')}
